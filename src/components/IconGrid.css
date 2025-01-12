@@ -1,0 +1,16 @@
+.icon-grid {
+    display: flex;
+    justify-content: space-around;
+}
+.d-flex.justify-content-center.align-items-center > div {
+  margin: 0 100px; /* Adds horizontal spacing between the columns */
+}
+
+/* Center the Featured Plants section */
+.featured-plants {
+  text-align: center; /* Center-align text */
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center-align items horizontally */
+  justify-content: center; /* Center-align items vertically */
+}

@@ -1,0 +1,10 @@
+body {
+  font-family: Arial, sans-serif;
+}
+
+.top {
+  background-image: url('./assets/hero-bg.jpg');
+  background-size: cover;
+  background-position: center;
+  border-radius: 0 0 100px 100px;
+}
