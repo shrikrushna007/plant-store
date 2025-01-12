@@ -2,14 +2,14 @@ import React from 'react';
 import './FeaturedPlants.css';
 
 const plants = [
-  { img: 'src/assets/plant1-free-img-300x300.jpg', name: 'Money Plant', price: '$34' },
-  { img: 'src/assets/plant3-free-img-300x300.jpg', name: 'Boncellensis Succulent', price: '$25' },
-  { img: 'src/assets/cactus2-free-img.jpg', name: 'Cleistocactus', price: '$34' },
-  { img: 'src/assets/plant4-free-img.jpg', name: 'Green Soil Lotus', price: '$20' },
-  { img: 'src/assets/cactus4.jpg', name: 'Old Lady Cactus', price: '$12' },
-  { img: 'src/assets/plant6-free-img.jpg', name: 'Rattle Snake Tail', price: '$32' },
-  { img: 'src/assets/plant4-free-img.jpg', name: 'Piorro Quisquam', price: '$45' },
-  { img: 'src/assets/plant3-free-img-300x300.jpg', name: 'Another Succulent', price: '$30' },
+  { type: 'plant',img: 'src/assets/plant3-free-img-300x300.jpg', name: 'Boncellensis Succulent', price: '$25' },
+  { type: 'cactus',img: 'src/assets/cactus2-free-img.jpg', name: 'Cleistocactus', price: '$34' },
+  { type: 'plant',img: 'src/assets/plant4-free-img.jpg', name: 'Green Soil Lotus', price: '$20' },
+  { type: 'plant',img: 'src/assets/plant1-free-img-300x300.jpg', name: 'Money Plant', price: '$34' },
+  { type: 'cactus',img: 'src/assets/cactus4.jpg', name: 'Old Lady Cactus', price: '$12' },
+  { type: 'plant',img: 'src/assets/plant4-free-img.jpg', name: 'Piorro Quisquam', price: '$45' },
+  { type: 'plant',img: 'src/assets/plant6-free-img.jpg', name: 'Rattle Snake Tail', price: '$32' },
+  { type: 'cactus',img: 'src/assets/cactus6-free-img-300x300.jpg', name: 'Star Cactus', price: '$30' },
 ];
 
 function FeaturedPlants() {
@@ -30,6 +30,7 @@ function FeaturedPlants() {
                 </button>
                 <img src={plant.img} className="card-img-top" alt={plant.name} />
                 <div className="card-body">
+                  <p>{plant.type}</p>
                   <h5 className="card-title">{plant.name}</h5>
                   <div>
                   <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star" viewBox="0 0 16 16">
