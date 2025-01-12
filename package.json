@@ -1,8 +1,10 @@
 {
   "name": "plant-store",
   "private": true,
+  "homepage": "https://shrikrushna007.github.io/plant-store/",
   "version": "0.0.0",
   "type": "module",
+  
   "scripts": {
     "dev": "vite",
     "build": "vite build",
